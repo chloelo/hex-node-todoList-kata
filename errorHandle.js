@@ -8,7 +8,7 @@ const errorHandle = (res) => {
   res.writeHead(400, headers);
   res.write(JSON.stringify({
     "status": "false",
-    "message": '欄位未填寫正確，或無此 uuid dsfa'
+    "message": '欄位未填寫正確，或無此 uuid'
   }))
   res.end()
 }
