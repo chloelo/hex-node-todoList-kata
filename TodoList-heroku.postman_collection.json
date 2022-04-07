@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "23596939-d474-49b7-99b4-f89ecd5087de",
+		"name": "TodoList-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://still-wave-72094.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"still-wave-72094",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://still-wave-72094.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"still-wave-72094",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"不想上班\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://still-wave-72094.herokuapp.com/todos/5cd4cd30-c36b-431a-a125-26278e721f10",
+					"protocol": "https",
+					"host": [
+						"still-wave-72094",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"5cd4cd30-c36b-431a-a125-26278e721f10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://still-wave-72094.herokuapp.com/todos/bedb7bbd-2683-4179-aa07-d0735bada4bc",
+					"protocol": "https",
+					"host": [
+						"still-wave-72094",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"bedb7bbd-2683-4179-aa07-d0735bada4bc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"today go to work 48888\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://still-wave-72094.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"still-wave-72094",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
